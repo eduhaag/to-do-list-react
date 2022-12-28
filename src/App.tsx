@@ -1,4 +1,4 @@
-import {PlusCircle} from 'phosphor-react';
+import {PlusCircle, ClipboardText} from 'phosphor-react';
 import uuid from 'react-uuid';
 
 import { Header } from './components/Header';
@@ -7,6 +7,7 @@ import styles from './App.module.css';
 import './global.css';
 import { ChangeEvent, FormEvent, InvalidEvent, useEffect, useState } from 'react';
 import { Task } from './components/Task';
+import { TaskList } from './components/TaskList';
 
 interface Task {
   id: string;
@@ -118,22 +119,18 @@ export function App(){
             </div>
           </div>
 
-          <ul className={styles.tasksList}>
-            {
-              tasks.map((task=>{
-                return(
-                  <Task 
-                    key={task.id}
-                    id={task.id}
-                    content={task.content} 
-                    done={task.done}
-                    onDeleteTask={deleteTask}
-                    onCheckTask={checkTask}
-                  />
-                )
-              }))
-            }
-          </ul>
+          {
+            tasks.length>0 
+            ? 
+            <TaskList tasks={tasks} deleteTask={deleteTask} markTaskDone={checkTask}/>
+            :
+            <div className={styles.emptyList}>
+              <ClipboardText size={56}/>
+              <strong>Você ainda não tem tarefas cadastradas</strong>
+              <span>Crie tarefas e organize seus itens a fazer</span>
+            </div>
+          }
+
         </div>
       </main>
     </>
