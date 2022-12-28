@@ -1,0 +1,96 @@
+.main {
+  max-width: 46rem;
+  margin: -1.5rem auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 1rem;
+}
+
+.main form {
+  height: 3.37rem;
+  gap: 0.5rem;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.main form button {
+  background-color: var(--blueDark);
+  padding: 1rem;
+  border-radius: 8px;
+  border: 0;
+  color: var(--gray-100);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 700;
+  font-size: 0.87rem;
+  cursor: pointer;
+
+  transition: background-color 0.2s;
+}
+
+.main form button:hover {
+  background: var(--blue);
+}
+
+.main form input {
+  width: 100%;
+  background: var(--gray-500);
+  color: var(--gray-100);
+  padding: 1rem;
+  border: 1px solid var(--gray-700);
+  border-radius: 8px;
+}
+
+.tasks {
+  margin-top: 3.93rem;
+}
+
+.counters {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.counters div {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.counters div strong {
+  font-weight: 700;
+  font-size: 0.87rem;;
+}
+
+.counters div span {
+  padding: 0.12rem 0.5rem;
+  background: var(--gray-400);
+  color: var(--gray-200);
+  border-radius: 999px;
+  font-weight: 700;
+  font-size: 0.75rem;
+}
+
+.totalTasks strong {
+  color: var(--blue);
+}
+
+.totalCheckedTasks strong {
+  color: var(--purple);
+}
+
+.tasksList {
+  margin-top: 1.5rem;
+}
+
+@media (max-width:768px) {
+  html {
+    font-size: 87.5%;
+  }
+}
+
+
+
