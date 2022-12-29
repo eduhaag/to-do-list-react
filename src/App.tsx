@@ -16,18 +16,7 @@ interface Task {
 }
 
 export function App(){
-  const [tasks, setTasks] = useState<Task[]>([
-    {
-      id: uuid(),
-      content: 'fazer café',
-      done: false,
-    },
-    {
-      id: uuid(),
-      content: 'fazer cafézihno',
-      done: true,
-    }
-  ]);
+  const [tasks, setTasks] = useState<Task[]>([]);
   const [newTaskInput, setNewTaskInput] = useState('');
   const [doneTaskCouter, setDoneTaskCouter] = useState(0);
 
