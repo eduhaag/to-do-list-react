@@ -2,6 +2,7 @@
   <img src="https://raw.githubusercontent.com/eduhaag/to-do-list-react/main/public/readme-header.jpg" />
 
   #### Você pode ver o projeto em execução clicando <a href="https://todo-list-reactjs-5.netlify.app/" target="_blank">aqui</a>.
+  [![Netlify Status](https://api.netlify.com/api/v1/badges/c2836b91-d154-4444-893a-6cb47b6f9f81/deploy-status)](https://app.netlify.com/sites/todo-list-reactjs-5/deploys)
 </div>
 
 ## 🖊️ Descrição
