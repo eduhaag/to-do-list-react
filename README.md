@@ -1,7 +1,7 @@
 <div align="center">
   <img src="https://raw.githubusercontent.com/eduhaag/to-do-list-react/main/public/readme-header.jpg" />
 
-  #### Você pode ver o projeto em execução clicando <a href="https://todo-list-reactjs-5.netlify.app/">aqui</a>.
+  #### Você pode ver o projeto em execução clicando <a href="https://todo-list-reactjs-5.netlify.app/" target="_blank">aqui</a>.
 </div>
 
 ## 🖊️ Descrição
